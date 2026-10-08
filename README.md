@@ -167,3 +167,9 @@ pnpm test
 ## 许可证
 
 新增接入代码使用 [MIT](LICENSE)。上游依赖保留各自许可证；Minecraft 名称、纹理及其他原始资产的权利归相应权利人。本项目与 Mojang、Microsoft 无官方关联。
+
+## 联系方式
+
+**jev商业定制、技术场景交流欢迎联系，请注明来意**
+
+<img src="docs/assets/wechat-qr.jpg" alt="微信联系二维码" width="220">
