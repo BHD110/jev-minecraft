@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN" translate="no">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="google" content="notranslate"><meta name="theme-color" content="#152018">
+  <title>Jev 玩 Minecraft · 开源生存世界</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><div class="brand"><svg viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="m14 2 11 6v12l-11 6-11-6V8L14 2Z" stroke="currentColor" stroke-width="2"/><path d="m3 8 11 6 11-6M14 14v12" stroke="currentColor" stroke-width="2"/></svg><strong>MINECRAFT <span>× JEV</span></strong><small>开源世界实验</small></div><div class="connection"><i></i><span id="connection">正在连接世界</span><b>1.16.5</b></div></header>
+  <main>
+    <section class="game-panel">
+      <div class="view-top"><span>实时游戏画面 <b id="mode-label">第一人称</b></span><div><a href="/play.html" class="play-link">自己玩 ↗</a><button id="camera">切换第三人称 ↗</button><button id="fullscreen">放大画面 ⛶</button></div></div>
+      <div id="screen">
+        <iframe id="viewer" title="Minecraft 机器人实时视角" src="/view/?camera=first" allow="fullscreen"></iframe>
+        <div class="crosshair" id="crosshair" aria-hidden="true">＋</div>
+        <div class="world-note" id="world-note">你看到的是 Jev 机器人的实时视角</div>
+        <div id="loading"><span class="loader"></span><h2>正在进入开源 Minecraft 世界</h2><p>加载真实区块、森林和机器人视角…</p></div>
+        <div id="won" hidden><span>✓</span><div><strong id="won-title">任务完成，木柱搭好了。</strong><p id="won-copy"></p></div></div>
+      </div>
+      <div class="game-status"><span id="message" data-status="loading">正在启动世界…</span><span id="position">位置 —</span></div>
+      <div class="inventory"><div class="health"><span id="hearts">♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</span><small>生存模式</small></div><div class="hotbar"><div class="slot active"><i class="wood-icon"></i><b id="wood">0</b></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div></div><span class="inventory-label">真实背包：<b id="inventory-label">空手</b></span></div>
+    </section>
+    <aside>
+      <section class="mission"><p class="section-label">给 Jev 的任务 <span id="steps">第 0 步</span></p><h1 id="mission-title">砍树，回营地，搭木柱。</h1><p class="mission-copy" id="mission-copy">空手出发，在森林收集 4 块原木，<br>到营地的金色地基上搭 3 格高木柱。</p>
+        <div class="progress"><div id="p-wood"><span>01</span><p><span id="label-wood">采集原木</span><b id="collected">0 / 4</b></p></div><div id="p-tower"><span>02</span><p><span id="label-tower">搭起木柱</span><b id="tower">0 / 3</b></p></div><div id="p-home"><span>03</span><p><span id="label-home">返回营地</span><b id="home">等待任务</b></p></div></div>
+        <div class="key-config"><span id="key-status">正在检查 Jev 密钥…</span><button id="configure-key" type="button">配置密钥</button></div>
+        <button id="camp-task" class="secondary" style="width:100%;margin-bottom:10px">升级为完整营地</button><div class="controls"><button id="run" class="primary" disabled>▶ 让 Jev 开始</button><button id="step" class="secondary" disabled>单步</button></div><div class="minor"><button id="reset" disabled>↻ 重置这次演示</button><button id="inspect">查看发送 / 接收 ↗</button></div><div id="error" role="alert" hidden></div>
+      </section>
+      <section class="decision"><p class="section-label">官方 Jev 的实际选择 <span class="light" id="light"></span></p><h2 id="decision">还没有开始决策</h2><p id="effect">Jev 选择操作，Mineflayer 控制机器人执行。</p><div class="meta"><span id="model">模型待确认</span><span id="latency">— ms</span></div><div id="probabilities"></div><p class="prob-note" id="prob-note" hidden>概率表示本次选项比较，不是任务成功率。</p></section>
+      <section class="log"><div class="log-head"><p class="section-label">实况记录</p><a href="/api/export" download>导出记录 ↓</a></div><div id="history"><p class="empty">开始后会逐步记录模型选择和游戏结果。</p></div></section>
+      <section class="source"><span>基于现成开源项目</span><div><a href="https://github.com/PrismarineJS/flying-squid" target="_blank" rel="noreferrer">Flying Squid ↗</a><a href="https://github.com/PrismarineJS/mineflayer" target="_blank" rel="noreferrer">Mineflayer ↗</a><a href="https://github.com/PrismarineJS/prismarine-viewer" target="_blank" rel="noreferrer">Prismarine Viewer ↗</a></div><p>开源 Minecraft 兼容世界；此页观看 Jev 采集与建造。点击“自己玩”可控制独立角色走动、挖掘和建造。</p></section>
+    </aside>
+  </main>
+  <dialog id="trace"><div class="trace-head"><div><p class="section-label">逐步检查</p><h2>发给 Jev 的，和它实际返回的。</h2></div><button id="close-trace" aria-label="关闭记录">✕</button></div><p>世界位置、背包、任务进度、最近操作和可执行动作发给模型。模型返回选择与概率；寻路、挖掘、拾取和放置通过 Mineflayer 与服务端执行。</p><label>选择步骤<select id="trace-step"></select></label><div class="trace-grid"><section><h3>发送给 Jev</h3><pre id="request">尚无请求。</pre></section><section><h3>Jev 返回与游戏执行结果</h3><pre id="response">尚无响应。</pre></section></div></dialog>
+  <dialog id="key-dialog" aria-labelledby="key-title">
+    <form id="key-form" autocomplete="off">
+      <div class="trace-head"><h2 id="key-title">输入官方 Jev 密钥</h2><button id="close-key" type="button" aria-label="关闭密钥窗口">✕</button></div>
+      <p>未检测到密钥时，可以在这里输入。密钥只保存在当前服务的内存里，重启后需要重新输入。</p>
+      <label for="jev-key">Jev API 密钥</label>
+      <input id="jev-key" name="jev-key" type="password" placeholder="以 apikey_ 开头" autocomplete="off" spellcheck="false" autocapitalize="none" maxlength="507" autofocus required>
+      <p class="key-help">从 <a href="https://typesafe.ai" target="_blank" rel="noreferrer">TypeSafe 官方平台 ↗</a> 获取密钥。这里只检查格式，首次决策会验证是否可用。密钥不会写入代码、游戏记录或浏览器存储。</p>
+      <p id="key-error" role="alert" hidden></p>
+      <div class="key-actions"><button id="skip-key" type="button" class="secondary">暂不配置，先看世界</button><button id="save-key" type="submit" class="primary">输入并启用</button></div>
+    </form>
+  </dialog>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

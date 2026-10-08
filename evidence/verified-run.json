@@ -1,0 +1,2200 @@
+{
+  "id": "78cfd95b-c3e6-4d3b-bff2-798955a335aa",
+  "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+  "world": {
+    "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+    "position": {
+      "x": 1.5,
+      "y": 37,
+      "z": 0.5
+    },
+    "health": 20,
+    "food": 20,
+    "gameMode": "survival",
+    "inventory": [
+      {
+        "name": "oak_log",
+        "count": 1
+      }
+    ],
+    "wood": 1,
+    "collected": 4,
+    "towerHeight": 3,
+    "nearCamp": true,
+    "finished": true,
+    "camp": {
+      "x": 0.5,
+      "y": 37,
+      "z": 0.5
+    },
+    "marker": {
+      "x": 2,
+      "y": 37,
+      "z": 0
+    }
+  },
+  "records": [
+    {
+      "step": 1,
+      "at": "2026-10-07T13:14:15.095Z",
+      "model": "jev-1.13.0",
+      "latencyMs": 720,
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+          "position": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "health": 20,
+          "food": 20,
+          "gameMode": "survival",
+          "inventory": [],
+          "wood": 0,
+          "collected": 0,
+          "towerHeight": 0,
+          "nearCamp": true,
+          "finished": false,
+          "camp": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "marker": {
+            "x": 2,
+            "y": 37,
+            "z": 0
+          },
+          "world": {
+            "server": "Flying Squid",
+            "minecraftVersion": "1.16.5",
+            "terrain": "开放森林和起伏地形；所有挖掘、拾取和放置都由 Minecraft 协议与服务端背包处理。"
+          },
+          "rules": [
+            "目标共需采集 4 块原木，其中 3 块用于木柱，另 1 块保留在背包。",
+            "挖树可能会掉出物品，需要拾取后背包才增加。",
+            "木柱必须建在指定金色地基上。用原木直接搭柱，不需要工作台或合成配方。",
+            "材料够了就回营地建造；木柱完成后回营地中心。避免多余采集、反复回头和等待。"
+          ],
+          "recentActions": [],
+          "availableActions": [
+            {
+              "id": "dig_4_37_4",
+              "label": "挖原木 (4,37,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 4.9 格。"
+            },
+            {
+              "id": "dig_4_36_4",
+              "label": "挖原木 (4,36,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.0 格。"
+            },
+            {
+              "id": "dig_4_38_4",
+              "label": "挖原木 (4,38,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.0 格。"
+            },
+            {
+              "id": "dig_4_39_4",
+              "label": "挖原木 (4,39,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.3 格。"
+            },
+            {
+              "id": "dig_-4_37_4",
+              "label": "挖原木 (-4,37,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.7 格。"
+            },
+            {
+              "id": "look_around",
+              "label": "环顾四周",
+              "effect": "转头观察，不获得材料、不推进建造。"
+            },
+            {
+              "id": "wait",
+              "label": "原地等待",
+              "effect": "等待一秒；没有材料收益。"
+            }
+          ]
+        },
+        "questions": {
+          "next_action": {
+            "type": "choice",
+            "instructions": "你正在 Minecraft 兼容的生存世界中。为了空手采集 4 块原木、在营地搭 3 格高的原木柱并返回营地中心，现在最合适的下一项操作是什么？根据实际位置、背包、木柱高度、最近操作及候选效果选择一个动作；材料足够后不要继续砍树，完成建造后回营地中心。",
+            "criteria": {
+              "dig_4_37_4": "挖原木 (4,37,4)。走近并挖一块原木，尝试拾取掉落物。距离 4.9 格。",
+              "dig_4_36_4": "挖原木 (4,36,4)。走近并挖一块原木，尝试拾取掉落物。距离 5.0 格。",
+              "dig_4_38_4": "挖原木 (4,38,4)。走近并挖一块原木，尝试拾取掉落物。距离 5.0 格。",
+              "dig_4_39_4": "挖原木 (4,39,4)。走近并挖一块原木，尝试拾取掉落物。距离 5.3 格。",
+              "dig_-4_37_4": "挖原木 (-4,37,4)。走近并挖一块原木，尝试拾取掉落物。距离 5.7 格。",
+              "look_around": "环顾四周。转头观察，不获得材料、不推进建造。",
+              "wait": "原地等待。等待一秒；没有材料收益。"
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "next_action": {
+            "type": "choice",
+            "choice": "dig_4_37_4",
+            "confidence": 1,
+            "probabilities": {
+              "wait": 0,
+              "look_around": 0,
+              "dig_-4_37_4": 0,
+              "dig_4_38_4": 0,
+              "dig_4_39_4": 0,
+              "dig_4_36_4": 0,
+              "dig_4_37_4": 1
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1638,
+          "output_tokens": 111
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "dig_4_37_4",
+        "confidence": 1,
+        "probabilities": {
+          "wait": 0,
+          "look_around": 0,
+          "dig_-4_37_4": 0,
+          "dig_4_38_4": 0,
+          "dig_4_39_4": 0,
+          "dig_4_36_4": 0,
+          "dig_4_37_4": 1
+        }
+      },
+      "action": {
+        "id": "dig_4_37_4",
+        "kind": "dig",
+        "target": {
+          "x": 4,
+          "y": 37,
+          "z": 4
+        },
+        "label": "挖原木 (4,37,4)",
+        "description": "走近并挖一块原木，尝试拾取掉落物。距离 4.9 格。"
+      },
+      "before": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [],
+        "wood": 0,
+        "collected": 0,
+        "towerHeight": 0,
+        "nearCamp": true,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      },
+      "ok": true,
+      "effect": "挖开真实原木方块；掉落物尚未拾取",
+      "after": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 4.5,
+          "y": 36,
+          "z": 3.4
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [],
+        "wood": 0,
+        "collected": 0,
+        "towerHeight": 0,
+        "nearCamp": false,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      }
+    },
+    {
+      "step": 2,
+      "at": "2026-10-07T13:14:24.622Z",
+      "model": "jev-1.13.0",
+      "latencyMs": 708,
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+          "position": {
+            "x": 4.5,
+            "y": 36,
+            "z": 3.4
+          },
+          "health": 20,
+          "food": 20,
+          "gameMode": "survival",
+          "inventory": [],
+          "wood": 0,
+          "collected": 0,
+          "towerHeight": 0,
+          "nearCamp": false,
+          "finished": false,
+          "camp": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "marker": {
+            "x": 2,
+            "y": 37,
+            "z": 0
+          },
+          "world": {
+            "server": "Flying Squid",
+            "minecraftVersion": "1.16.5",
+            "terrain": "开放森林和起伏地形；所有挖掘、拾取和放置都由 Minecraft 协议与服务端背包处理。"
+          },
+          "rules": [
+            "目标共需采集 4 块原木，其中 3 块用于木柱，另 1 块保留在背包。",
+            "挖树可能会掉出物品，需要拾取后背包才增加。",
+            "木柱必须建在指定金色地基上。用原木直接搭柱，不需要工作台或合成配方。",
+            "材料够了就回营地建造；木柱完成后回营地中心。避免多余采集、反复回头和等待。"
+          ],
+          "recentActions": [
+            {
+              "action": "挖原木 (4,37,4)",
+              "effect": "挖开真实原木方块；掉落物尚未拾取",
+              "ok": true
+            }
+          ],
+          "availableActions": [
+            {
+              "id": "dig_4_36_4",
+              "label": "挖原木 (4,36,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 0.8 格。"
+            },
+            {
+              "id": "dig_4_38_4",
+              "label": "挖原木 (4,38,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 2.2 格。"
+            },
+            {
+              "id": "dig_4_39_4",
+              "label": "挖原木 (4,39,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 3.1 格。"
+            },
+            {
+              "id": "dig_4_37_-4",
+              "label": "挖原木 (4,37,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.4 格。"
+            },
+            {
+              "id": "dig_12_36_4",
+              "label": "挖原木 (12,36,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。"
+            },
+            {
+              "id": "pickup_3",
+              "label": "拾取地上的掉落物",
+              "effect": "走向附近掉落物，拾取后由服务端更新背包；距离 1.9 格。"
+            },
+            {
+              "id": "go_camp",
+              "label": "回到营地中心",
+              "effect": "沿可走地形返回营地中心。不挖树，不放方块。"
+            },
+            {
+              "id": "look_around",
+              "label": "环顾四周",
+              "effect": "转头观察，不获得材料、不推进建造。"
+            },
+            {
+              "id": "wait",
+              "label": "原地等待",
+              "effect": "等待一秒；没有材料收益。"
+            }
+          ]
+        },
+        "questions": {
+          "next_action": {
+            "type": "choice",
+            "instructions": "你正在 Minecraft 兼容的生存世界中。为了空手采集 4 块原木、在营地搭 3 格高的原木柱并返回营地中心，现在最合适的下一项操作是什么？根据实际位置、背包、木柱高度、最近操作及候选效果选择一个动作；材料足够后不要继续砍树，完成建造后回营地中心。",
+            "criteria": {
+              "dig_4_36_4": "挖原木 (4,36,4)。走近并挖一块原木，尝试拾取掉落物。距离 0.8 格。",
+              "dig_4_38_4": "挖原木 (4,38,4)。走近并挖一块原木，尝试拾取掉落物。距离 2.2 格。",
+              "dig_4_39_4": "挖原木 (4,39,4)。走近并挖一块原木，尝试拾取掉落物。距离 3.1 格。",
+              "dig_4_37_-4": "挖原木 (4,37,-4)。走近并挖一块原木，尝试拾取掉落物。距离 7.4 格。",
+              "dig_12_36_4": "挖原木 (12,36,4)。走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。",
+              "pickup_3": "拾取地上的掉落物。走向附近掉落物，拾取后由服务端更新背包；距离 1.9 格。",
+              "go_camp": "回到营地中心。沿可走地形返回营地中心。不挖树，不放方块。",
+              "look_around": "环顾四周。转头观察，不获得材料、不推进建造。",
+              "wait": "原地等待。等待一秒；没有材料收益。"
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "next_action": {
+            "type": "choice",
+            "choice": "pickup_3",
+            "confidence": 0.85,
+            "probabilities": {
+              "pickup_3": 0.87,
+              "look_around": 0,
+              "dig_4_39_4": 0,
+              "go_camp": 0,
+              "wait": 0,
+              "dig_4_38_4": 0,
+              "dig_12_36_4": 0,
+              "dig_4_36_4": 0.13,
+              "dig_4_37_-4": 0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1904,
+          "output_tokens": 125
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "pickup_3",
+        "confidence": 0.85,
+        "probabilities": {
+          "pickup_3": 0.87,
+          "look_around": 0,
+          "dig_4_39_4": 0,
+          "go_camp": 0,
+          "wait": 0,
+          "dig_4_38_4": 0,
+          "dig_12_36_4": 0,
+          "dig_4_36_4": 0.13,
+          "dig_4_37_-4": 0
+        }
+      },
+      "action": {
+        "id": "pickup_3",
+        "kind": "pickup",
+        "target": {
+          "x": 4.8,
+          "y": 37.2,
+          "z": 4.9
+        },
+        "label": "拾取地上的掉落物",
+        "description": "走向附近掉落物，拾取后由服务端更新背包；距离 1.9 格。"
+      },
+      "before": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 4.5,
+          "y": 36,
+          "z": 3.4
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [],
+        "wood": 0,
+        "collected": 0,
+        "towerHeight": 0,
+        "nearCamp": false,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      },
+      "ok": true,
+      "effect": "拾取掉落物 · 背包原木 0 块",
+      "after": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 4.5,
+          "y": 36,
+          "z": 3.4
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [],
+        "wood": 0,
+        "collected": 0,
+        "towerHeight": 0,
+        "nearCamp": false,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      }
+    },
+    {
+      "step": 3,
+      "at": "2026-10-07T13:14:29.847Z",
+      "model": "jev-1.13.0",
+      "latencyMs": 655,
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+          "position": {
+            "x": 4.5,
+            "y": 36,
+            "z": 3.4
+          },
+          "health": 20,
+          "food": 20,
+          "gameMode": "survival",
+          "inventory": [],
+          "wood": 0,
+          "collected": 0,
+          "towerHeight": 0,
+          "nearCamp": false,
+          "finished": false,
+          "camp": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "marker": {
+            "x": 2,
+            "y": 37,
+            "z": 0
+          },
+          "world": {
+            "server": "Flying Squid",
+            "minecraftVersion": "1.16.5",
+            "terrain": "开放森林和起伏地形；所有挖掘、拾取和放置都由 Minecraft 协议与服务端背包处理。"
+          },
+          "rules": [
+            "目标共需采集 4 块原木，其中 3 块用于木柱，另 1 块保留在背包。",
+            "挖树可能会掉出物品，需要拾取后背包才增加。",
+            "木柱必须建在指定金色地基上。用原木直接搭柱，不需要工作台或合成配方。",
+            "材料够了就回营地建造；木柱完成后回营地中心。避免多余采集、反复回头和等待。"
+          ],
+          "recentActions": [
+            {
+              "action": "挖原木 (4,37,4)",
+              "effect": "挖开真实原木方块；掉落物尚未拾取",
+              "ok": true
+            },
+            {
+              "action": "拾取地上的掉落物",
+              "effect": "拾取掉落物 · 背包原木 0 块",
+              "ok": true
+            }
+          ],
+          "availableActions": [
+            {
+              "id": "dig_4_36_4",
+              "label": "挖原木 (4,36,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 0.8 格。"
+            },
+            {
+              "id": "dig_4_38_4",
+              "label": "挖原木 (4,38,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 2.2 格。"
+            },
+            {
+              "id": "dig_4_39_4",
+              "label": "挖原木 (4,39,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 3.1 格。"
+            },
+            {
+              "id": "dig_4_37_-4",
+              "label": "挖原木 (4,37,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.4 格。"
+            },
+            {
+              "id": "dig_12_36_4",
+              "label": "挖原木 (12,36,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。"
+            },
+            {
+              "id": "pickup_3",
+              "label": "拾取地上的掉落物",
+              "effect": "走向附近掉落物，拾取后由服务端更新背包；距离 1.9 格。"
+            },
+            {
+              "id": "go_camp",
+              "label": "回到营地中心",
+              "effect": "沿可走地形返回营地中心。不挖树，不放方块。"
+            },
+            {
+              "id": "look_around",
+              "label": "环顾四周",
+              "effect": "转头观察，不获得材料、不推进建造。"
+            },
+            {
+              "id": "wait",
+              "label": "原地等待",
+              "effect": "等待一秒；没有材料收益。"
+            }
+          ]
+        },
+        "questions": {
+          "next_action": {
+            "type": "choice",
+            "instructions": "你正在 Minecraft 兼容的生存世界中。为了空手采集 4 块原木、在营地搭 3 格高的原木柱并返回营地中心，现在最合适的下一项操作是什么？根据实际位置、背包、木柱高度、最近操作及候选效果选择一个动作；材料足够后不要继续砍树，完成建造后回营地中心。",
+            "criteria": {
+              "dig_4_36_4": "挖原木 (4,36,4)。走近并挖一块原木，尝试拾取掉落物。距离 0.8 格。",
+              "dig_4_38_4": "挖原木 (4,38,4)。走近并挖一块原木，尝试拾取掉落物。距离 2.2 格。",
+              "dig_4_39_4": "挖原木 (4,39,4)。走近并挖一块原木，尝试拾取掉落物。距离 3.1 格。",
+              "dig_4_37_-4": "挖原木 (4,37,-4)。走近并挖一块原木，尝试拾取掉落物。距离 7.4 格。",
+              "dig_12_36_4": "挖原木 (12,36,4)。走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。",
+              "pickup_3": "拾取地上的掉落物。走向附近掉落物，拾取后由服务端更新背包；距离 1.9 格。",
+              "go_camp": "回到营地中心。沿可走地形返回营地中心。不挖树，不放方块。",
+              "look_around": "环顾四周。转头观察，不获得材料、不推进建造。",
+              "wait": "原地等待。等待一秒；没有材料收益。"
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "next_action": {
+            "type": "choice",
+            "choice": "dig_4_36_4",
+            "confidence": 0.68,
+            "probabilities": {
+              "dig_4_36_4": 0.73,
+              "dig_4_38_4": 0.01,
+              "dig_4_39_4": 0,
+              "dig_4_37_-4": 0,
+              "dig_12_36_4": 0,
+              "pickup_3": 0.26,
+              "go_camp": 0,
+              "look_around": 0,
+              "wait": 0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1951,
+          "output_tokens": 130
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "dig_4_36_4",
+        "confidence": 0.68,
+        "probabilities": {
+          "dig_4_36_4": 0.73,
+          "dig_4_38_4": 0.01,
+          "dig_4_39_4": 0,
+          "dig_4_37_-4": 0,
+          "dig_12_36_4": 0,
+          "pickup_3": 0.26,
+          "go_camp": 0,
+          "look_around": 0,
+          "wait": 0
+        }
+      },
+      "action": {
+        "id": "dig_4_36_4",
+        "kind": "dig",
+        "target": {
+          "x": 4,
+          "y": 36,
+          "z": 4
+        },
+        "label": "挖原木 (4,36,4)",
+        "description": "走近并挖一块原木，尝试拾取掉落物。距离 0.8 格。"
+      },
+      "before": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 4.5,
+          "y": 36,
+          "z": 3.4
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [],
+        "wood": 0,
+        "collected": 0,
+        "towerHeight": 0,
+        "nearCamp": false,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      },
+      "ok": true,
+      "effect": "挖开真实原木方块；背包原木 +2",
+      "after": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 4.5,
+          "y": 36,
+          "z": 3.4
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 2
+          }
+        ],
+        "wood": 2,
+        "collected": 2,
+        "towerHeight": 0,
+        "nearCamp": false,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      }
+    },
+    {
+      "step": 4,
+      "at": "2026-10-07T13:14:35.308Z",
+      "model": "jev-1.13.0",
+      "latencyMs": 698,
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+          "position": {
+            "x": 4.5,
+            "y": 36,
+            "z": 3.4
+          },
+          "health": 20,
+          "food": 20,
+          "gameMode": "survival",
+          "inventory": [
+            {
+              "name": "oak_log",
+              "count": 2
+            }
+          ],
+          "wood": 2,
+          "collected": 2,
+          "towerHeight": 0,
+          "nearCamp": false,
+          "finished": false,
+          "camp": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "marker": {
+            "x": 2,
+            "y": 37,
+            "z": 0
+          },
+          "world": {
+            "server": "Flying Squid",
+            "minecraftVersion": "1.16.5",
+            "terrain": "开放森林和起伏地形；所有挖掘、拾取和放置都由 Minecraft 协议与服务端背包处理。"
+          },
+          "rules": [
+            "目标共需采集 4 块原木，其中 3 块用于木柱，另 1 块保留在背包。",
+            "挖树可能会掉出物品，需要拾取后背包才增加。",
+            "木柱必须建在指定金色地基上。用原木直接搭柱，不需要工作台或合成配方。",
+            "材料够了就回营地建造；木柱完成后回营地中心。避免多余采集、反复回头和等待。"
+          ],
+          "recentActions": [
+            {
+              "action": "挖原木 (4,37,4)",
+              "effect": "挖开真实原木方块；掉落物尚未拾取",
+              "ok": true
+            },
+            {
+              "action": "拾取地上的掉落物",
+              "effect": "拾取掉落物 · 背包原木 0 块",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,36,4)",
+              "effect": "挖开真实原木方块；背包原木 +2",
+              "ok": true
+            }
+          ],
+          "availableActions": [
+            {
+              "id": "dig_4_38_4",
+              "label": "挖原木 (4,38,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 2.2 格。"
+            },
+            {
+              "id": "dig_4_39_4",
+              "label": "挖原木 (4,39,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 3.1 格。"
+            },
+            {
+              "id": "dig_4_37_-4",
+              "label": "挖原木 (4,37,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.4 格。"
+            },
+            {
+              "id": "dig_12_36_4",
+              "label": "挖原木 (12,36,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。"
+            },
+            {
+              "id": "dig_12_35_4",
+              "label": "挖原木 (12,35,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.6 格。"
+            },
+            {
+              "id": "go_camp",
+              "label": "回到营地中心",
+              "effect": "沿可走地形返回营地中心。不挖树，不放方块。"
+            },
+            {
+              "id": "build_tower",
+              "label": "在营地木柱上放一块原木",
+              "effect": "走到营地金色地基旁，用背包中的原木放置一块。当前木柱 0/3 格；消耗 1 块原木。"
+            },
+            {
+              "id": "look_around",
+              "label": "环顾四周",
+              "effect": "转头观察，不获得材料、不推进建造。"
+            },
+            {
+              "id": "wait",
+              "label": "原地等待",
+              "effect": "等待一秒；没有材料收益。"
+            }
+          ]
+        },
+        "questions": {
+          "next_action": {
+            "type": "choice",
+            "instructions": "你正在 Minecraft 兼容的生存世界中。为了空手采集 4 块原木、在营地搭 3 格高的原木柱并返回营地中心，现在最合适的下一项操作是什么？根据实际位置、背包、木柱高度、最近操作及候选效果选择一个动作；材料足够后不要继续砍树，完成建造后回营地中心。",
+            "criteria": {
+              "dig_4_38_4": "挖原木 (4,38,4)。走近并挖一块原木，尝试拾取掉落物。距离 2.2 格。",
+              "dig_4_39_4": "挖原木 (4,39,4)。走近并挖一块原木，尝试拾取掉落物。距离 3.1 格。",
+              "dig_4_37_-4": "挖原木 (4,37,-4)。走近并挖一块原木，尝试拾取掉落物。距离 7.4 格。",
+              "dig_12_36_4": "挖原木 (12,36,4)。走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。",
+              "dig_12_35_4": "挖原木 (12,35,4)。走近并挖一块原木，尝试拾取掉落物。距离 7.6 格。",
+              "go_camp": "回到营地中心。沿可走地形返回营地中心。不挖树，不放方块。",
+              "build_tower": "在营地木柱上放一块原木。走到营地金色地基旁，用背包中的原木放置一块。当前木柱 0/3 格；消耗 1 块原木。",
+              "look_around": "环顾四周。转头观察，不获得材料、不推进建造。",
+              "wait": "原地等待。等待一秒；没有材料收益。"
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "next_action": {
+            "type": "choice",
+            "choice": "dig_4_38_4",
+            "confidence": 0.48,
+            "probabilities": {
+              "dig_12_36_4": 0.01,
+              "go_camp": 0.28,
+              "dig_4_38_4": 0.54,
+              "wait": 0,
+              "build_tower": 0.13,
+              "dig_12_35_4": 0,
+              "dig_4_37_-4": 0,
+              "look_around": 0,
+              "dig_4_39_4": 0.03
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2055,
+          "output_tokens": 131
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "dig_4_38_4",
+        "confidence": 0.48,
+        "probabilities": {
+          "dig_12_36_4": 0.01,
+          "go_camp": 0.28,
+          "dig_4_38_4": 0.54,
+          "wait": 0,
+          "build_tower": 0.13,
+          "dig_12_35_4": 0,
+          "dig_4_37_-4": 0,
+          "look_around": 0,
+          "dig_4_39_4": 0.03
+        }
+      },
+      "action": {
+        "id": "dig_4_38_4",
+        "kind": "dig",
+        "target": {
+          "x": 4,
+          "y": 38,
+          "z": 4
+        },
+        "label": "挖原木 (4,38,4)",
+        "description": "走近并挖一块原木，尝试拾取掉落物。距离 2.2 格。"
+      },
+      "before": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 4.5,
+          "y": 36,
+          "z": 3.4
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 2
+          }
+        ],
+        "wood": 2,
+        "collected": 2,
+        "towerHeight": 0,
+        "nearCamp": false,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      },
+      "ok": true,
+      "effect": "挖开真实原木方块；背包原木 +1",
+      "after": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 4.5,
+          "y": 36,
+          "z": 3.4
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 3
+          }
+        ],
+        "wood": 3,
+        "collected": 3,
+        "towerHeight": 0,
+        "nearCamp": false,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      }
+    },
+    {
+      "step": 5,
+      "at": "2026-10-07T13:14:40.747Z",
+      "model": "jev-1.13.0",
+      "latencyMs": 680,
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+          "position": {
+            "x": 4.5,
+            "y": 36,
+            "z": 3.4
+          },
+          "health": 20,
+          "food": 20,
+          "gameMode": "survival",
+          "inventory": [
+            {
+              "name": "oak_log",
+              "count": 3
+            }
+          ],
+          "wood": 3,
+          "collected": 3,
+          "towerHeight": 0,
+          "nearCamp": false,
+          "finished": false,
+          "camp": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "marker": {
+            "x": 2,
+            "y": 37,
+            "z": 0
+          },
+          "world": {
+            "server": "Flying Squid",
+            "minecraftVersion": "1.16.5",
+            "terrain": "开放森林和起伏地形；所有挖掘、拾取和放置都由 Minecraft 协议与服务端背包处理。"
+          },
+          "rules": [
+            "目标共需采集 4 块原木，其中 3 块用于木柱，另 1 块保留在背包。",
+            "挖树可能会掉出物品，需要拾取后背包才增加。",
+            "木柱必须建在指定金色地基上。用原木直接搭柱，不需要工作台或合成配方。",
+            "材料够了就回营地建造；木柱完成后回营地中心。避免多余采集、反复回头和等待。"
+          ],
+          "recentActions": [
+            {
+              "action": "挖原木 (4,37,4)",
+              "effect": "挖开真实原木方块；掉落物尚未拾取",
+              "ok": true
+            },
+            {
+              "action": "拾取地上的掉落物",
+              "effect": "拾取掉落物 · 背包原木 0 块",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,36,4)",
+              "effect": "挖开真实原木方块；背包原木 +2",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,38,4)",
+              "effect": "挖开真实原木方块；背包原木 +1",
+              "ok": true
+            }
+          ],
+          "availableActions": [
+            {
+              "id": "dig_4_39_4",
+              "label": "挖原木 (4,39,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 3.1 格。"
+            },
+            {
+              "id": "dig_4_37_-4",
+              "label": "挖原木 (4,37,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.4 格。"
+            },
+            {
+              "id": "dig_12_36_4",
+              "label": "挖原木 (12,36,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。"
+            },
+            {
+              "id": "dig_12_35_4",
+              "label": "挖原木 (12,35,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.6 格。"
+            },
+            {
+              "id": "dig_12_37_4",
+              "label": "挖原木 (12,37,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.6 格。"
+            },
+            {
+              "id": "go_camp",
+              "label": "回到营地中心",
+              "effect": "沿可走地形返回营地中心。不挖树，不放方块。"
+            },
+            {
+              "id": "build_tower",
+              "label": "在营地木柱上放一块原木",
+              "effect": "走到营地金色地基旁，用背包中的原木放置一块。当前木柱 0/3 格；消耗 1 块原木。"
+            },
+            {
+              "id": "look_around",
+              "label": "环顾四周",
+              "effect": "转头观察，不获得材料、不推进建造。"
+            },
+            {
+              "id": "wait",
+              "label": "原地等待",
+              "effect": "等待一秒；没有材料收益。"
+            }
+          ]
+        },
+        "questions": {
+          "next_action": {
+            "type": "choice",
+            "instructions": "你正在 Minecraft 兼容的生存世界中。为了空手采集 4 块原木、在营地搭 3 格高的原木柱并返回营地中心，现在最合适的下一项操作是什么？根据实际位置、背包、木柱高度、最近操作及候选效果选择一个动作；材料足够后不要继续砍树，完成建造后回营地中心。",
+            "criteria": {
+              "dig_4_39_4": "挖原木 (4,39,4)。走近并挖一块原木，尝试拾取掉落物。距离 3.1 格。",
+              "dig_4_37_-4": "挖原木 (4,37,-4)。走近并挖一块原木，尝试拾取掉落物。距离 7.4 格。",
+              "dig_12_36_4": "挖原木 (12,36,4)。走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。",
+              "dig_12_35_4": "挖原木 (12,35,4)。走近并挖一块原木，尝试拾取掉落物。距离 7.6 格。",
+              "dig_12_37_4": "挖原木 (12,37,4)。走近并挖一块原木，尝试拾取掉落物。距离 7.6 格。",
+              "go_camp": "回到营地中心。沿可走地形返回营地中心。不挖树，不放方块。",
+              "build_tower": "在营地木柱上放一块原木。走到营地金色地基旁，用背包中的原木放置一块。当前木柱 0/3 格；消耗 1 块原木。",
+              "look_around": "环顾四周。转头观察，不获得材料、不推进建造。",
+              "wait": "原地等待。等待一秒；没有材料收益。"
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "next_action": {
+            "type": "choice",
+            "choice": "build_tower",
+            "confidence": 0.33,
+            "probabilities": {
+              "wait": 0,
+              "dig_4_37_-4": 0,
+              "look_around": 0,
+              "dig_12_35_4": 0,
+              "dig_12_37_4": 0,
+              "go_camp": 0.38,
+              "dig_12_36_4": 0,
+              "dig_4_39_4": 0.22,
+              "build_tower": 0.4
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2109,
+          "output_tokens": 127
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "build_tower",
+        "confidence": 0.33,
+        "probabilities": {
+          "wait": 0,
+          "dig_4_37_-4": 0,
+          "look_around": 0,
+          "dig_12_35_4": 0,
+          "dig_12_37_4": 0,
+          "go_camp": 0.38,
+          "dig_12_36_4": 0,
+          "dig_4_39_4": 0.22,
+          "build_tower": 0.4
+        }
+      },
+      "action": {
+        "id": "build_tower",
+        "kind": "build",
+        "label": "在营地木柱上放一块原木",
+        "description": "走到营地金色地基旁，用背包中的原木放置一块。当前木柱 0/3 格；消耗 1 块原木。"
+      },
+      "before": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 4.5,
+          "y": 36,
+          "z": 3.4
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 3
+          }
+        ],
+        "wood": 3,
+        "collected": 3,
+        "towerHeight": 0,
+        "nearCamp": false,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      },
+      "ok": true,
+      "effect": "放置真实原木方块 · 木柱 1/3 格 · 背包原木 −1",
+      "after": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 1.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 2
+          }
+        ],
+        "wood": 2,
+        "collected": 3,
+        "towerHeight": 1,
+        "nearCamp": true,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      }
+    },
+    {
+      "step": 6,
+      "at": "2026-10-07T13:14:44.232Z",
+      "model": "jev-1.13.0",
+      "latencyMs": 274,
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+          "position": {
+            "x": 1.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "health": 20,
+          "food": 20,
+          "gameMode": "survival",
+          "inventory": [
+            {
+              "name": "oak_log",
+              "count": 2
+            }
+          ],
+          "wood": 2,
+          "collected": 3,
+          "towerHeight": 1,
+          "nearCamp": true,
+          "finished": false,
+          "camp": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "marker": {
+            "x": 2,
+            "y": 37,
+            "z": 0
+          },
+          "world": {
+            "server": "Flying Squid",
+            "minecraftVersion": "1.16.5",
+            "terrain": "开放森林和起伏地形；所有挖掘、拾取和放置都由 Minecraft 协议与服务端背包处理。"
+          },
+          "rules": [
+            "目标共需采集 4 块原木，其中 3 块用于木柱，另 1 块保留在背包。",
+            "挖树可能会掉出物品，需要拾取后背包才增加。",
+            "木柱必须建在指定金色地基上。用原木直接搭柱，不需要工作台或合成配方。",
+            "材料够了就回营地建造；木柱完成后回营地中心。避免多余采集、反复回头和等待。"
+          ],
+          "recentActions": [
+            {
+              "action": "挖原木 (4,37,4)",
+              "effect": "挖开真实原木方块；掉落物尚未拾取",
+              "ok": true
+            },
+            {
+              "action": "拾取地上的掉落物",
+              "effect": "拾取掉落物 · 背包原木 0 块",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,36,4)",
+              "effect": "挖开真实原木方块；背包原木 +2",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,38,4)",
+              "effect": "挖开真实原木方块；背包原木 +1",
+              "ok": true
+            },
+            {
+              "action": "在营地木柱上放一块原木",
+              "effect": "放置真实原木方块 · 木柱 1/3 格 · 背包原木 −1",
+              "ok": true
+            }
+          ],
+          "availableActions": [
+            {
+              "id": "dig_4_39_4",
+              "label": "挖原木 (4,39,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 4.7 格。"
+            },
+            {
+              "id": "dig_4_37_-4",
+              "label": "挖原木 (4,37,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.1 格。"
+            },
+            {
+              "id": "dig_4_38_-4",
+              "label": "挖原木 (4,38,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.2 格。"
+            },
+            {
+              "id": "dig_4_39_-4",
+              "label": "挖原木 (4,39,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.5 格。"
+            },
+            {
+              "id": "dig_4_40_-4",
+              "label": "挖原木 (4,40,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 6.0 格。"
+            },
+            {
+              "id": "build_tower",
+              "label": "在营地木柱上放一块原木",
+              "effect": "走到营地金色地基旁，用背包中的原木放置一块。当前木柱 1/3 格；消耗 1 块原木。"
+            },
+            {
+              "id": "look_around",
+              "label": "环顾四周",
+              "effect": "转头观察，不获得材料、不推进建造。"
+            },
+            {
+              "id": "wait",
+              "label": "原地等待",
+              "effect": "等待一秒；没有材料收益。"
+            }
+          ]
+        },
+        "questions": {
+          "next_action": {
+            "type": "choice",
+            "instructions": "你正在 Minecraft 兼容的生存世界中。为了空手采集 4 块原木、在营地搭 3 格高的原木柱并返回营地中心，现在最合适的下一项操作是什么？根据实际位置、背包、木柱高度、最近操作及候选效果选择一个动作；材料足够后不要继续砍树，完成建造后回营地中心。",
+            "criteria": {
+              "dig_4_39_4": "挖原木 (4,39,4)。走近并挖一块原木，尝试拾取掉落物。距离 4.7 格。",
+              "dig_4_37_-4": "挖原木 (4,37,-4)。走近并挖一块原木，尝试拾取掉落物。距离 5.1 格。",
+              "dig_4_38_-4": "挖原木 (4,38,-4)。走近并挖一块原木，尝试拾取掉落物。距离 5.2 格。",
+              "dig_4_39_-4": "挖原木 (4,39,-4)。走近并挖一块原木，尝试拾取掉落物。距离 5.5 格。",
+              "dig_4_40_-4": "挖原木 (4,40,-4)。走近并挖一块原木，尝试拾取掉落物。距离 6.0 格。",
+              "build_tower": "在营地木柱上放一块原木。走到营地金色地基旁，用背包中的原木放置一块。当前木柱 1/3 格；消耗 1 块原木。",
+              "look_around": "环顾四周。转头观察，不获得材料、不推进建造。",
+              "wait": "原地等待。等待一秒；没有材料收益。"
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "next_action": {
+            "type": "choice",
+            "choice": "build_tower",
+            "confidence": 0.71,
+            "probabilities": {
+              "build_tower": 0.75,
+              "dig_4_38_-4": 0.01,
+              "dig_4_39_-4": 0,
+              "dig_4_37_-4": 0.01,
+              "wait": 0,
+              "look_around": 0,
+              "dig_4_39_4": 0.23,
+              "dig_4_40_-4": 0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2062,
+          "output_tokens": 115
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "build_tower",
+        "confidence": 0.71,
+        "probabilities": {
+          "build_tower": 0.75,
+          "dig_4_38_-4": 0.01,
+          "dig_4_39_-4": 0,
+          "dig_4_37_-4": 0.01,
+          "wait": 0,
+          "look_around": 0,
+          "dig_4_39_4": 0.23,
+          "dig_4_40_-4": 0
+        }
+      },
+      "action": {
+        "id": "build_tower",
+        "kind": "build",
+        "label": "在营地木柱上放一块原木",
+        "description": "走到营地金色地基旁，用背包中的原木放置一块。当前木柱 1/3 格；消耗 1 块原木。"
+      },
+      "before": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 1.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 2
+          }
+        ],
+        "wood": 2,
+        "collected": 3,
+        "towerHeight": 1,
+        "nearCamp": true,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      },
+      "ok": true,
+      "effect": "放置真实原木方块 · 木柱 2/3 格 · 背包原木 −1",
+      "after": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 1.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 1
+          }
+        ],
+        "wood": 1,
+        "collected": 3,
+        "towerHeight": 2,
+        "nearCamp": true,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      }
+    },
+    {
+      "step": 7,
+      "at": "2026-10-07T13:14:45.656Z",
+      "model": "jev-1.13.0",
+      "latencyMs": 295,
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+          "position": {
+            "x": 1.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "health": 20,
+          "food": 20,
+          "gameMode": "survival",
+          "inventory": [
+            {
+              "name": "oak_log",
+              "count": 1
+            }
+          ],
+          "wood": 1,
+          "collected": 3,
+          "towerHeight": 2,
+          "nearCamp": true,
+          "finished": false,
+          "camp": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "marker": {
+            "x": 2,
+            "y": 37,
+            "z": 0
+          },
+          "world": {
+            "server": "Flying Squid",
+            "minecraftVersion": "1.16.5",
+            "terrain": "开放森林和起伏地形；所有挖掘、拾取和放置都由 Minecraft 协议与服务端背包处理。"
+          },
+          "rules": [
+            "目标共需采集 4 块原木，其中 3 块用于木柱，另 1 块保留在背包。",
+            "挖树可能会掉出物品，需要拾取后背包才增加。",
+            "木柱必须建在指定金色地基上。用原木直接搭柱，不需要工作台或合成配方。",
+            "材料够了就回营地建造；木柱完成后回营地中心。避免多余采集、反复回头和等待。"
+          ],
+          "recentActions": [
+            {
+              "action": "挖原木 (4,37,4)",
+              "effect": "挖开真实原木方块；掉落物尚未拾取",
+              "ok": true
+            },
+            {
+              "action": "拾取地上的掉落物",
+              "effect": "拾取掉落物 · 背包原木 0 块",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,36,4)",
+              "effect": "挖开真实原木方块；背包原木 +2",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,38,4)",
+              "effect": "挖开真实原木方块；背包原木 +1",
+              "ok": true
+            },
+            {
+              "action": "在营地木柱上放一块原木",
+              "effect": "放置真实原木方块 · 木柱 1/3 格 · 背包原木 −1",
+              "ok": true
+            },
+            {
+              "action": "在营地木柱上放一块原木",
+              "effect": "放置真实原木方块 · 木柱 2/3 格 · 背包原木 −1",
+              "ok": true
+            }
+          ],
+          "availableActions": [
+            {
+              "id": "dig_4_39_4",
+              "label": "挖原木 (4,39,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 4.7 格。"
+            },
+            {
+              "id": "dig_4_37_-4",
+              "label": "挖原木 (4,37,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.1 格。"
+            },
+            {
+              "id": "dig_4_38_-4",
+              "label": "挖原木 (4,38,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.2 格。"
+            },
+            {
+              "id": "dig_4_39_-4",
+              "label": "挖原木 (4,39,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.5 格。"
+            },
+            {
+              "id": "dig_4_40_-4",
+              "label": "挖原木 (4,40,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 6.0 格。"
+            },
+            {
+              "id": "build_tower",
+              "label": "在营地木柱上放一块原木",
+              "effect": "走到营地金色地基旁，用背包中的原木放置一块。当前木柱 2/3 格；消耗 1 块原木。"
+            },
+            {
+              "id": "look_around",
+              "label": "环顾四周",
+              "effect": "转头观察，不获得材料、不推进建造。"
+            },
+            {
+              "id": "wait",
+              "label": "原地等待",
+              "effect": "等待一秒；没有材料收益。"
+            }
+          ]
+        },
+        "questions": {
+          "next_action": {
+            "type": "choice",
+            "instructions": "你正在 Minecraft 兼容的生存世界中。为了空手采集 4 块原木、在营地搭 3 格高的原木柱并返回营地中心，现在最合适的下一项操作是什么？根据实际位置、背包、木柱高度、最近操作及候选效果选择一个动作；材料足够后不要继续砍树，完成建造后回营地中心。",
+            "criteria": {
+              "dig_4_39_4": "挖原木 (4,39,4)。走近并挖一块原木，尝试拾取掉落物。距离 4.7 格。",
+              "dig_4_37_-4": "挖原木 (4,37,-4)。走近并挖一块原木，尝试拾取掉落物。距离 5.1 格。",
+              "dig_4_38_-4": "挖原木 (4,38,-4)。走近并挖一块原木，尝试拾取掉落物。距离 5.2 格。",
+              "dig_4_39_-4": "挖原木 (4,39,-4)。走近并挖一块原木，尝试拾取掉落物。距离 5.5 格。",
+              "dig_4_40_-4": "挖原木 (4,40,-4)。走近并挖一块原木，尝试拾取掉落物。距离 6.0 格。",
+              "build_tower": "在营地木柱上放一块原木。走到营地金色地基旁，用背包中的原木放置一块。当前木柱 2/3 格；消耗 1 块原木。",
+              "look_around": "环顾四周。转头观察，不获得材料、不推进建造。",
+              "wait": "原地等待。等待一秒；没有材料收益。"
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "next_action": {
+            "type": "choice",
+            "choice": "build_tower",
+            "confidence": 0.92,
+            "probabilities": {
+              "dig_4_39_-4": 0,
+              "dig_4_39_4": 0.07,
+              "dig_4_40_-4": 0,
+              "dig_4_38_-4": 0,
+              "dig_4_37_-4": 0,
+              "look_around": 0,
+              "wait": 0,
+              "build_tower": 0.93
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2123,
+          "output_tokens": 115
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "build_tower",
+        "confidence": 0.92,
+        "probabilities": {
+          "dig_4_39_-4": 0,
+          "dig_4_39_4": 0.07,
+          "dig_4_40_-4": 0,
+          "dig_4_38_-4": 0,
+          "dig_4_37_-4": 0,
+          "look_around": 0,
+          "wait": 0,
+          "build_tower": 0.93
+        }
+      },
+      "action": {
+        "id": "build_tower",
+        "kind": "build",
+        "label": "在营地木柱上放一块原木",
+        "description": "走到营地金色地基旁，用背包中的原木放置一块。当前木柱 2/3 格；消耗 1 块原木。"
+      },
+      "before": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 1.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 1
+          }
+        ],
+        "wood": 1,
+        "collected": 3,
+        "towerHeight": 2,
+        "nearCamp": true,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      },
+      "ok": true,
+      "effect": "放置真实原木方块 · 木柱 3/3 格 · 背包原木 −1",
+      "after": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 1.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [],
+        "wood": 0,
+        "collected": 3,
+        "towerHeight": 3,
+        "nearCamp": true,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      }
+    },
+    {
+      "step": 8,
+      "at": "2026-10-07T13:14:47.108Z",
+      "model": "jev-1.13.0",
+      "latencyMs": 293,
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+          "position": {
+            "x": 1.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "health": 20,
+          "food": 20,
+          "gameMode": "survival",
+          "inventory": [],
+          "wood": 0,
+          "collected": 3,
+          "towerHeight": 3,
+          "nearCamp": true,
+          "finished": false,
+          "camp": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "marker": {
+            "x": 2,
+            "y": 37,
+            "z": 0
+          },
+          "world": {
+            "server": "Flying Squid",
+            "minecraftVersion": "1.16.5",
+            "terrain": "开放森林和起伏地形；所有挖掘、拾取和放置都由 Minecraft 协议与服务端背包处理。"
+          },
+          "rules": [
+            "目标共需采集 4 块原木，其中 3 块用于木柱，另 1 块保留在背包。",
+            "挖树可能会掉出物品，需要拾取后背包才增加。",
+            "木柱必须建在指定金色地基上。用原木直接搭柱，不需要工作台或合成配方。",
+            "材料够了就回营地建造；木柱完成后回营地中心。避免多余采集、反复回头和等待。"
+          ],
+          "recentActions": [
+            {
+              "action": "拾取地上的掉落物",
+              "effect": "拾取掉落物 · 背包原木 0 块",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,36,4)",
+              "effect": "挖开真实原木方块；背包原木 +2",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,38,4)",
+              "effect": "挖开真实原木方块；背包原木 +1",
+              "ok": true
+            },
+            {
+              "action": "在营地木柱上放一块原木",
+              "effect": "放置真实原木方块 · 木柱 1/3 格 · 背包原木 −1",
+              "ok": true
+            },
+            {
+              "action": "在营地木柱上放一块原木",
+              "effect": "放置真实原木方块 · 木柱 2/3 格 · 背包原木 −1",
+              "ok": true
+            },
+            {
+              "action": "在营地木柱上放一块原木",
+              "effect": "放置真实原木方块 · 木柱 3/3 格 · 背包原木 −1",
+              "ok": true
+            }
+          ],
+          "availableActions": [
+            {
+              "id": "dig_4_39_4",
+              "label": "挖原木 (4,39,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 4.7 格。"
+            },
+            {
+              "id": "dig_4_37_-4",
+              "label": "挖原木 (4,37,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.1 格。"
+            },
+            {
+              "id": "dig_4_38_-4",
+              "label": "挖原木 (4,38,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.2 格。"
+            },
+            {
+              "id": "dig_4_39_-4",
+              "label": "挖原木 (4,39,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 5.5 格。"
+            },
+            {
+              "id": "dig_4_40_-4",
+              "label": "挖原木 (4,40,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 6.0 格。"
+            },
+            {
+              "id": "look_around",
+              "label": "环顾四周",
+              "effect": "转头观察，不获得材料、不推进建造。"
+            },
+            {
+              "id": "wait",
+              "label": "原地等待",
+              "effect": "等待一秒；没有材料收益。"
+            }
+          ]
+        },
+        "questions": {
+          "next_action": {
+            "type": "choice",
+            "instructions": "你正在 Minecraft 兼容的生存世界中。为了空手采集 4 块原木、在营地搭 3 格高的原木柱并返回营地中心，现在最合适的下一项操作是什么？根据实际位置、背包、木柱高度、最近操作及候选效果选择一个动作；材料足够后不要继续砍树，完成建造后回营地中心。",
+            "criteria": {
+              "dig_4_39_4": "挖原木 (4,39,4)。走近并挖一块原木，尝试拾取掉落物。距离 4.7 格。",
+              "dig_4_37_-4": "挖原木 (4,37,-4)。走近并挖一块原木，尝试拾取掉落物。距离 5.1 格。",
+              "dig_4_38_-4": "挖原木 (4,38,-4)。走近并挖一块原木，尝试拾取掉落物。距离 5.2 格。",
+              "dig_4_39_-4": "挖原木 (4,39,-4)。走近并挖一块原木，尝试拾取掉落物。距离 5.5 格。",
+              "dig_4_40_-4": "挖原木 (4,40,-4)。走近并挖一块原木，尝试拾取掉落物。距离 6.0 格。",
+              "look_around": "环顾四周。转头观察，不获得材料、不推进建造。",
+              "wait": "原地等待。等待一秒；没有材料收益。"
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "next_action": {
+            "type": "choice",
+            "choice": "dig_4_39_4",
+            "confidence": 0.52,
+            "probabilities": {
+              "dig_4_39_-4": 0.01,
+              "dig_4_37_-4": 0.03,
+              "look_around": 0.19,
+              "wait": 0.17,
+              "dig_4_38_-4": 0.01,
+              "dig_4_39_4": 0.59,
+              "dig_4_40_-4": 0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1967,
+          "output_tokens": 111
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "dig_4_39_4",
+        "confidence": 0.52,
+        "probabilities": {
+          "dig_4_39_-4": 0.01,
+          "dig_4_37_-4": 0.03,
+          "look_around": 0.19,
+          "wait": 0.17,
+          "dig_4_38_-4": 0.01,
+          "dig_4_39_4": 0.59,
+          "dig_4_40_-4": 0
+        }
+      },
+      "action": {
+        "id": "dig_4_39_4",
+        "kind": "dig",
+        "target": {
+          "x": 4,
+          "y": 39,
+          "z": 4
+        },
+        "label": "挖原木 (4,39,4)",
+        "description": "走近并挖一块原木，尝试拾取掉落物。距离 4.7 格。"
+      },
+      "before": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 1.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [],
+        "wood": 0,
+        "collected": 3,
+        "towerHeight": 3,
+        "nearCamp": true,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      },
+      "ok": true,
+      "effect": "挖开真实原木方块；背包原木 +1",
+      "after": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 4.5,
+          "y": 36,
+          "z": 3.4
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 1
+          }
+        ],
+        "wood": 1,
+        "collected": 4,
+        "towerHeight": 3,
+        "nearCamp": false,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      }
+    },
+    {
+      "step": 9,
+      "at": "2026-10-07T13:14:53.771Z",
+      "model": "jev-1.13.0",
+      "latencyMs": 655,
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+          "position": {
+            "x": 4.5,
+            "y": 36,
+            "z": 3.4
+          },
+          "health": 20,
+          "food": 20,
+          "gameMode": "survival",
+          "inventory": [
+            {
+              "name": "oak_log",
+              "count": 1
+            }
+          ],
+          "wood": 1,
+          "collected": 4,
+          "towerHeight": 3,
+          "nearCamp": false,
+          "finished": false,
+          "camp": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "marker": {
+            "x": 2,
+            "y": 37,
+            "z": 0
+          },
+          "world": {
+            "server": "Flying Squid",
+            "minecraftVersion": "1.16.5",
+            "terrain": "开放森林和起伏地形；所有挖掘、拾取和放置都由 Minecraft 协议与服务端背包处理。"
+          },
+          "rules": [
+            "目标共需采集 4 块原木，其中 3 块用于木柱，另 1 块保留在背包。",
+            "挖树可能会掉出物品，需要拾取后背包才增加。",
+            "木柱必须建在指定金色地基上。用原木直接搭柱，不需要工作台或合成配方。",
+            "材料够了就回营地建造；木柱完成后回营地中心。避免多余采集、反复回头和等待。"
+          ],
+          "recentActions": [
+            {
+              "action": "挖原木 (4,36,4)",
+              "effect": "挖开真实原木方块；背包原木 +2",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,38,4)",
+              "effect": "挖开真实原木方块；背包原木 +1",
+              "ok": true
+            },
+            {
+              "action": "在营地木柱上放一块原木",
+              "effect": "放置真实原木方块 · 木柱 1/3 格 · 背包原木 −1",
+              "ok": true
+            },
+            {
+              "action": "在营地木柱上放一块原木",
+              "effect": "放置真实原木方块 · 木柱 2/3 格 · 背包原木 −1",
+              "ok": true
+            },
+            {
+              "action": "在营地木柱上放一块原木",
+              "effect": "放置真实原木方块 · 木柱 3/3 格 · 背包原木 −1",
+              "ok": true
+            },
+            {
+              "action": "挖原木 (4,39,4)",
+              "effect": "挖开真实原木方块；背包原木 +1",
+              "ok": true
+            }
+          ],
+          "availableActions": [
+            {
+              "id": "dig_4_37_-4",
+              "label": "挖原木 (4,37,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。"
+            },
+            {
+              "id": "dig_12_36_4",
+              "label": "挖原木 (12,36,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。"
+            },
+            {
+              "id": "dig_12_35_4",
+              "label": "挖原木 (12,35,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。"
+            },
+            {
+              "id": "dig_12_37_4",
+              "label": "挖原木 (12,37,4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。"
+            },
+            {
+              "id": "dig_4_38_-4",
+              "label": "挖原木 (4,38,-4)",
+              "effect": "走近并挖一块原木，尝试拾取掉落物。距离 7.7 格。"
+            },
+            {
+              "id": "go_camp",
+              "label": "回到营地中心",
+              "effect": "沿可走地形返回营地中心。不挖树，不放方块。"
+            },
+            {
+              "id": "look_around",
+              "label": "环顾四周",
+              "effect": "转头观察，不获得材料、不推进建造。"
+            },
+            {
+              "id": "wait",
+              "label": "原地等待",
+              "effect": "等待一秒；没有材料收益。"
+            }
+          ]
+        },
+        "questions": {
+          "next_action": {
+            "type": "choice",
+            "instructions": "你正在 Minecraft 兼容的生存世界中。为了空手采集 4 块原木、在营地搭 3 格高的原木柱并返回营地中心，现在最合适的下一项操作是什么？根据实际位置、背包、木柱高度、最近操作及候选效果选择一个动作；材料足够后不要继续砍树，完成建造后回营地中心。",
+            "criteria": {
+              "dig_4_37_-4": "挖原木 (4,37,-4)。走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。",
+              "dig_12_36_4": "挖原木 (12,36,4)。走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。",
+              "dig_12_35_4": "挖原木 (12,35,4)。走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。",
+              "dig_12_37_4": "挖原木 (12,37,4)。走近并挖一块原木，尝试拾取掉落物。距离 7.5 格。",
+              "dig_4_38_-4": "挖原木 (4,38,-4)。走近并挖一块原木，尝试拾取掉落物。距离 7.7 格。",
+              "go_camp": "回到营地中心。沿可走地形返回营地中心。不挖树，不放方块。",
+              "look_around": "环顾四周。转头观察，不获得材料、不推进建造。",
+              "wait": "原地等待。等待一秒；没有材料收益。"
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "next_action": {
+            "type": "choice",
+            "choice": "go_camp",
+            "confidence": 0.99,
+            "probabilities": {
+              "go_camp": 0.99,
+              "dig_4_37_-4": 0.01,
+              "dig_12_37_4": 0,
+              "wait": 0,
+              "dig_12_36_4": 0,
+              "look_around": 0,
+              "dig_12_35_4": 0,
+              "dig_4_38_-4": 0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2094,
+          "output_tokens": 118
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "go_camp",
+        "confidence": 0.99,
+        "probabilities": {
+          "go_camp": 0.99,
+          "dig_4_37_-4": 0.01,
+          "dig_12_37_4": 0,
+          "wait": 0,
+          "dig_12_36_4": 0,
+          "look_around": 0,
+          "dig_12_35_4": 0,
+          "dig_4_38_-4": 0
+        }
+      },
+      "action": {
+        "id": "go_camp",
+        "kind": "move",
+        "target": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "label": "回到营地中心",
+        "description": "沿可走地形返回营地中心。不挖树，不放方块。"
+      },
+      "before": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 4.5,
+          "y": 36,
+          "z": 3.4
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 1
+          }
+        ],
+        "wood": 1,
+        "collected": 4,
+        "towerHeight": 3,
+        "nearCamp": false,
+        "finished": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      },
+      "ok": true,
+      "effect": "已经走回营地中心",
+      "after": {
+        "task": "空手采集至少 4 块原木，在营地金色地基上搭起 3 格高的原木柱，最后返回营地中心。",
+        "position": {
+          "x": 1.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_log",
+            "count": 1
+          }
+        ],
+        "wood": 1,
+        "collected": 4,
+        "towerHeight": 3,
+        "nearCamp": true,
+        "finished": true,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        }
+      }
+    }
+  ]
+}

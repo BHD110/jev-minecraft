@@ -1,0 +1,103 @@
+{
+  "ready": true,
+  "connected": true,
+  "controlled": false,
+  "position": {
+    "x": 8.070179771770288,
+    "y": 38,
+    "z": 0.5558241330015408
+  },
+  "yaw": 4.691445029360661,
+  "pitch": 0,
+  "health": 20,
+  "food": 20,
+  "selected": 0,
+  "message": "已进入世界 · 点击画面开始玩",
+  "lastAction": null,
+  "target": {
+    "name": "glass",
+    "position": {
+      "x": 10,
+      "y": 39,
+      "z": 0
+    },
+    "face": 4
+  },
+  "digging": 0,
+  "inventory": [
+    {
+      "name": "oak_planks",
+      "count": 64
+    },
+    {
+      "name": "cobblestone",
+      "count": 64
+    },
+    {
+      "name": "dirt",
+      "count": 64
+    },
+    {
+      "name": "glass",
+      "count": 32
+    },
+    {
+      "name": "oak_log",
+      "count": 32
+    },
+    {
+      "name": "iron_pickaxe",
+      "count": 1
+    },
+    {
+      "name": "iron_axe",
+      "count": 1
+    },
+    {
+      "name": "iron_shovel",
+      "count": 1
+    },
+    {
+      "name": "stone_bricks",
+      "count": 64
+    }
+  ],
+  "hotbar": [
+    {
+      "name": "oak_planks",
+      "count": 64
+    },
+    {
+      "name": "cobblestone",
+      "count": 64
+    },
+    {
+      "name": "dirt",
+      "count": 64
+    },
+    {
+      "name": "glass",
+      "count": 32
+    },
+    {
+      "name": "oak_log",
+      "count": 32
+    },
+    {
+      "name": "iron_pickaxe",
+      "count": 1
+    },
+    {
+      "name": "iron_axe",
+      "count": 1
+    },
+    {
+      "name": "iron_shovel",
+      "count": 1
+    },
+    {
+      "name": "stone_bricks",
+      "count": 64
+    }
+  ]
+}

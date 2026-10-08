@@ -1,0 +1,1313 @@
+{
+  "id": "4e9aa566-8ad0-478e-86b6-a87509b74a74",
+  "task": "按照营地蓝图施工：搭建有完整地板、两格高围墙、玻璃窗、屋顶和可通行入口的小屋，配备工作台、熔炉、篝火、座位、照明和步道，最后返回出发营地。材料已提供，不需要采集或合成。",
+  "mode": "camp",
+  "world": {
+    "task": "按照营地蓝图施工：搭建有完整地板、两格高围墙、玻璃窗、屋顶和可通行入口的小屋，配备工作台、熔炉、篝火、座位、照明和步道，最后返回出发营地。材料已提供，不需要采集或合成。",
+    "position": {
+      "x": 7.3,
+      "y": 37,
+      "z": 0.5
+    },
+    "health": 20,
+    "food": 20,
+    "gameMode": "survival",
+    "inventory": [
+      {
+        "name": "oak_planks",
+        "count": 64
+      },
+      {
+        "name": "oak_log",
+        "count": 16
+      },
+      {
+        "name": "stone_bricks",
+        "count": 59
+      },
+      {
+        "name": "glass",
+        "count": 8
+      },
+      {
+        "name": "crafting_table",
+        "count": 1
+      },
+      {
+        "name": "furnace",
+        "count": 1
+      },
+      {
+        "name": "campfire",
+        "count": 1
+      },
+      {
+        "name": "lantern",
+        "count": 2
+      },
+      {
+        "name": "oak_stairs",
+        "count": 2
+      }
+    ],
+    "wood": 16,
+    "nearCamp": false,
+    "camp": {
+      "x": 0.5,
+      "y": 37,
+      "z": 0.5
+    },
+    "marker": {
+      "x": 2,
+      "y": 37,
+      "z": 0
+    },
+    "campProgress": {
+      "floor": {
+        "done": 5,
+        "total": 25
+      },
+      "structure": {
+        "done": 0,
+        "total": 55
+      },
+      "facilities": {
+        "done": 0,
+        "total": 10
+      }
+    },
+    "groups": [
+      {
+        "id": "floor_0",
+        "label": "铺设地板第 1 排",
+        "done": 5,
+        "total": 5,
+        "finished": true
+      },
+      {
+        "id": "floor_1",
+        "label": "铺设地板第 2 排",
+        "done": 0,
+        "total": 5,
+        "finished": false
+      },
+      {
+        "id": "floor_2",
+        "label": "铺设地板第 3 排",
+        "done": 0,
+        "total": 5,
+        "finished": false
+      },
+      {
+        "id": "floor_3",
+        "label": "铺设地板第 4 排",
+        "done": 0,
+        "total": 5,
+        "finished": false
+      },
+      {
+        "id": "floor_4",
+        "label": "铺设地板第 5 排",
+        "done": 0,
+        "total": 5,
+        "finished": false
+      },
+      {
+        "id": "wall_6_-2",
+        "label": "搭建墙柱 (6,-2)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_6_-1",
+        "label": "搭建墙柱 (6,-1)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_6_1",
+        "label": "搭建墙柱 (6,1)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_6_2",
+        "label": "搭建墙柱 (6,2)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_7_-2",
+        "label": "搭建墙柱 (7,-2)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_7_2",
+        "label": "搭建墙柱 (7,2)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_8_-2",
+        "label": "搭建墙柱 (8,-2)与玻璃窗",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_8_2",
+        "label": "搭建墙柱 (8,2)与玻璃窗",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_9_-2",
+        "label": "搭建墙柱 (9,-2)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_9_2",
+        "label": "搭建墙柱 (9,2)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_10_-2",
+        "label": "搭建墙柱 (10,-2)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_10_-1",
+        "label": "搭建墙柱 (10,-1)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_10_0",
+        "label": "搭建墙柱 (10,0)与玻璃窗",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_10_1",
+        "label": "搭建墙柱 (10,1)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "wall_10_2",
+        "label": "搭建墙柱 (10,2)",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "roof_0",
+        "label": "封好屋顶第 1 排",
+        "done": 0,
+        "total": 5,
+        "finished": false
+      },
+      {
+        "id": "roof_1",
+        "label": "封好屋顶第 2 排",
+        "done": 0,
+        "total": 5,
+        "finished": false
+      },
+      {
+        "id": "roof_2",
+        "label": "封好屋顶第 3 排",
+        "done": 0,
+        "total": 5,
+        "finished": false
+      },
+      {
+        "id": "roof_3",
+        "label": "封好屋顶第 4 排",
+        "done": 0,
+        "total": 5,
+        "finished": false
+      },
+      {
+        "id": "roof_4",
+        "label": "封好屋顶第 5 排",
+        "done": 0,
+        "total": 5,
+        "finished": false
+      },
+      {
+        "id": "workbench",
+        "label": "放置屋内工作台",
+        "done": 0,
+        "total": 1,
+        "finished": false
+      },
+      {
+        "id": "furnace",
+        "label": "放置屋内熔炉",
+        "done": 0,
+        "total": 1,
+        "finished": false
+      },
+      {
+        "id": "path",
+        "label": "铺设入口步道",
+        "done": 0,
+        "total": 3,
+        "finished": false
+      },
+      {
+        "id": "fire",
+        "label": "安放庭院篝火",
+        "done": 0,
+        "total": 1,
+        "finished": false
+      },
+      {
+        "id": "seats",
+        "label": "摆放篝火旁的座位",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      },
+      {
+        "id": "lights",
+        "label": "设置入口两侧照明",
+        "done": 0,
+        "total": 2,
+        "finished": false
+      }
+    ],
+    "entranceClear": true,
+    "built": 5,
+    "total": 90,
+    "finished": false
+  },
+  "records": [
+    {
+      "step": 1,
+      "at": "2026-10-08T09:23:36.895Z",
+      "model": "jev-1.13.0",
+      "latencyMs": 706,
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "task": "按照营地蓝图施工：搭建有完整地板、两格高围墙、玻璃窗、屋顶和可通行入口的小屋，配备工作台、熔炉、篝火、座位、照明和步道，最后返回出发营地。材料已提供，不需要采集或合成。",
+          "position": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "health": 20,
+          "food": 20,
+          "gameMode": "survival",
+          "inventory": [
+            {
+              "name": "oak_planks",
+              "count": 64
+            },
+            {
+              "name": "oak_log",
+              "count": 16
+            },
+            {
+              "name": "stone_bricks",
+              "count": 64
+            },
+            {
+              "name": "glass",
+              "count": 8
+            },
+            {
+              "name": "crafting_table",
+              "count": 1
+            },
+            {
+              "name": "furnace",
+              "count": 1
+            },
+            {
+              "name": "campfire",
+              "count": 1
+            },
+            {
+              "name": "lantern",
+              "count": 2
+            },
+            {
+              "name": "oak_stairs",
+              "count": 2
+            }
+          ],
+          "wood": 16,
+          "nearCamp": true,
+          "camp": {
+            "x": 0.5,
+            "y": 37,
+            "z": 0.5
+          },
+          "marker": {
+            "x": 2,
+            "y": 37,
+            "z": 0
+          },
+          "campProgress": {
+            "floor": {
+              "done": 0,
+              "total": 25
+            },
+            "structure": {
+              "done": 0,
+              "total": 55
+            },
+            "facilities": {
+              "done": 0,
+              "total": 10
+            }
+          },
+          "groups": [
+            {
+              "id": "floor_0",
+              "label": "铺设地板第 1 排",
+              "done": 0,
+              "total": 5,
+              "finished": false
+            },
+            {
+              "id": "floor_1",
+              "label": "铺设地板第 2 排",
+              "done": 0,
+              "total": 5,
+              "finished": false
+            },
+            {
+              "id": "floor_2",
+              "label": "铺设地板第 3 排",
+              "done": 0,
+              "total": 5,
+              "finished": false
+            },
+            {
+              "id": "floor_3",
+              "label": "铺设地板第 4 排",
+              "done": 0,
+              "total": 5,
+              "finished": false
+            },
+            {
+              "id": "floor_4",
+              "label": "铺设地板第 5 排",
+              "done": 0,
+              "total": 5,
+              "finished": false
+            },
+            {
+              "id": "wall_6_-2",
+              "label": "搭建墙柱 (6,-2)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_6_-1",
+              "label": "搭建墙柱 (6,-1)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_6_1",
+              "label": "搭建墙柱 (6,1)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_6_2",
+              "label": "搭建墙柱 (6,2)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_7_-2",
+              "label": "搭建墙柱 (7,-2)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_7_2",
+              "label": "搭建墙柱 (7,2)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_8_-2",
+              "label": "搭建墙柱 (8,-2)与玻璃窗",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_8_2",
+              "label": "搭建墙柱 (8,2)与玻璃窗",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_9_-2",
+              "label": "搭建墙柱 (9,-2)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_9_2",
+              "label": "搭建墙柱 (9,2)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_10_-2",
+              "label": "搭建墙柱 (10,-2)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_10_-1",
+              "label": "搭建墙柱 (10,-1)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_10_0",
+              "label": "搭建墙柱 (10,0)与玻璃窗",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_10_1",
+              "label": "搭建墙柱 (10,1)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "wall_10_2",
+              "label": "搭建墙柱 (10,2)",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "roof_0",
+              "label": "封好屋顶第 1 排",
+              "done": 0,
+              "total": 5,
+              "finished": false
+            },
+            {
+              "id": "roof_1",
+              "label": "封好屋顶第 2 排",
+              "done": 0,
+              "total": 5,
+              "finished": false
+            },
+            {
+              "id": "roof_2",
+              "label": "封好屋顶第 3 排",
+              "done": 0,
+              "total": 5,
+              "finished": false
+            },
+            {
+              "id": "roof_3",
+              "label": "封好屋顶第 4 排",
+              "done": 0,
+              "total": 5,
+              "finished": false
+            },
+            {
+              "id": "roof_4",
+              "label": "封好屋顶第 5 排",
+              "done": 0,
+              "total": 5,
+              "finished": false
+            },
+            {
+              "id": "workbench",
+              "label": "放置屋内工作台",
+              "done": 0,
+              "total": 1,
+              "finished": false
+            },
+            {
+              "id": "furnace",
+              "label": "放置屋内熔炉",
+              "done": 0,
+              "total": 1,
+              "finished": false
+            },
+            {
+              "id": "path",
+              "label": "铺设入口步道",
+              "done": 0,
+              "total": 3,
+              "finished": false
+            },
+            {
+              "id": "fire",
+              "label": "安放庭院篝火",
+              "done": 0,
+              "total": 1,
+              "finished": false
+            },
+            {
+              "id": "seats",
+              "label": "摆放篝火旁的座位",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            },
+            {
+              "id": "lights",
+              "label": "设置入口两侧照明",
+              "done": 0,
+              "total": 2,
+              "finished": false
+            }
+          ],
+          "entranceClear": true,
+          "built": 0,
+          "total": 90,
+          "finished": false,
+          "construction": "营地蓝图由程序给定，你决定下一段施工。候选中的一段包含 1—5 块，每一块通过真实 Minecraft 协议放置。不是自由生成建筑设计。",
+          "rules": [
+            "材料已经装入背包。优先完成有实际进度的建造动作，不要等待或来回走。",
+            "完整地板后搭墙柱，完整围墙后封屋顶，封顶后安放营地设施。",
+            "西侧入口必须保持两格高，不要堵住。所有设施齐全后回出发营地。"
+          ],
+          "recentActions": [],
+          "availableActions": [
+            {
+              "id": "floor_0",
+              "label": "铺设地板第 1 排",
+              "effect": "按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。"
+            },
+            {
+              "id": "floor_1",
+              "label": "铺设地板第 2 排",
+              "effect": "按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。"
+            },
+            {
+              "id": "floor_2",
+              "label": "铺设地板第 3 排",
+              "effect": "按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。"
+            },
+            {
+              "id": "floor_3",
+              "label": "铺设地板第 4 排",
+              "effect": "按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。"
+            },
+            {
+              "id": "floor_4",
+              "label": "铺设地板第 5 排",
+              "effect": "按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。"
+            },
+            {
+              "id": "look_around",
+              "label": "环顾工地",
+              "effect": "转头查看，不增加施工进度。"
+            },
+            {
+              "id": "wait",
+              "label": "原地等待",
+              "effect": "等待一秒，不增加施工进度。"
+            }
+          ]
+        },
+        "questions": {
+          "next_action": {
+            "type": "choice",
+            "instructions": "根据真实建筑进度、背包材料和可执行施工段，选择最有助于完成整座营地的下一步；设施全部齐全后返回出发营地。",
+            "criteria": {
+              "floor_0": "铺设地板第 1 排。按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。",
+              "floor_1": "铺设地板第 2 排。按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。",
+              "floor_2": "铺设地板第 3 排。按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。",
+              "floor_3": "铺设地板第 4 排。按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。",
+              "floor_4": "铺设地板第 5 排。按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。",
+              "look_around": "环顾工地。转头查看，不增加施工进度。",
+              "wait": "原地等待。等待一秒，不增加施工进度。"
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "next_action": {
+            "type": "choice",
+            "choice": "floor_0",
+            "confidence": 1,
+            "probabilities": {
+              "floor_4": 0,
+              "floor_2": 0,
+              "floor_0": 1,
+              "look_around": 0,
+              "wait": 0,
+              "floor_1": 0,
+              "floor_3": 0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3289,
+          "output_tokens": 81
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "choice": "floor_0",
+        "confidence": 1,
+        "probabilities": {
+          "floor_4": 0,
+          "floor_2": 0,
+          "floor_0": 1,
+          "look_around": 0,
+          "wait": 0,
+          "floor_1": 0,
+          "floor_3": 0
+        }
+      },
+      "action": {
+        "id": "floor_0",
+        "kind": "camp_build",
+        "label": "铺设地板第 1 排",
+        "description": "按蓝图完成这段施工，最多放置 5 块，实际消耗材料；需要 {\"stone_bricks\":5}。",
+        "groupId": "floor_0"
+      },
+      "before": {
+        "task": "按照营地蓝图施工：搭建有完整地板、两格高围墙、玻璃窗、屋顶和可通行入口的小屋，配备工作台、熔炉、篝火、座位、照明和步道，最后返回出发营地。材料已提供，不需要采集或合成。",
+        "position": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_planks",
+            "count": 64
+          },
+          {
+            "name": "oak_log",
+            "count": 16
+          },
+          {
+            "name": "stone_bricks",
+            "count": 64
+          },
+          {
+            "name": "glass",
+            "count": 8
+          },
+          {
+            "name": "crafting_table",
+            "count": 1
+          },
+          {
+            "name": "furnace",
+            "count": 1
+          },
+          {
+            "name": "campfire",
+            "count": 1
+          },
+          {
+            "name": "lantern",
+            "count": 2
+          },
+          {
+            "name": "oak_stairs",
+            "count": 2
+          }
+        ],
+        "wood": 16,
+        "nearCamp": true,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        },
+        "campProgress": {
+          "floor": {
+            "done": 0,
+            "total": 25
+          },
+          "structure": {
+            "done": 0,
+            "total": 55
+          },
+          "facilities": {
+            "done": 0,
+            "total": 10
+          }
+        },
+        "groups": [
+          {
+            "id": "floor_0",
+            "label": "铺设地板第 1 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "floor_1",
+            "label": "铺设地板第 2 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "floor_2",
+            "label": "铺设地板第 3 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "floor_3",
+            "label": "铺设地板第 4 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "floor_4",
+            "label": "铺设地板第 5 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "wall_6_-2",
+            "label": "搭建墙柱 (6,-2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_6_-1",
+            "label": "搭建墙柱 (6,-1)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_6_1",
+            "label": "搭建墙柱 (6,1)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_6_2",
+            "label": "搭建墙柱 (6,2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_7_-2",
+            "label": "搭建墙柱 (7,-2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_7_2",
+            "label": "搭建墙柱 (7,2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_8_-2",
+            "label": "搭建墙柱 (8,-2)与玻璃窗",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_8_2",
+            "label": "搭建墙柱 (8,2)与玻璃窗",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_9_-2",
+            "label": "搭建墙柱 (9,-2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_9_2",
+            "label": "搭建墙柱 (9,2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_10_-2",
+            "label": "搭建墙柱 (10,-2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_10_-1",
+            "label": "搭建墙柱 (10,-1)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_10_0",
+            "label": "搭建墙柱 (10,0)与玻璃窗",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_10_1",
+            "label": "搭建墙柱 (10,1)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_10_2",
+            "label": "搭建墙柱 (10,2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "roof_0",
+            "label": "封好屋顶第 1 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "roof_1",
+            "label": "封好屋顶第 2 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "roof_2",
+            "label": "封好屋顶第 3 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "roof_3",
+            "label": "封好屋顶第 4 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "roof_4",
+            "label": "封好屋顶第 5 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "workbench",
+            "label": "放置屋内工作台",
+            "done": 0,
+            "total": 1,
+            "finished": false
+          },
+          {
+            "id": "furnace",
+            "label": "放置屋内熔炉",
+            "done": 0,
+            "total": 1,
+            "finished": false
+          },
+          {
+            "id": "path",
+            "label": "铺设入口步道",
+            "done": 0,
+            "total": 3,
+            "finished": false
+          },
+          {
+            "id": "fire",
+            "label": "安放庭院篝火",
+            "done": 0,
+            "total": 1,
+            "finished": false
+          },
+          {
+            "id": "seats",
+            "label": "摆放篝火旁的座位",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "lights",
+            "label": "设置入口两侧照明",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          }
+        ],
+        "entranceClear": true,
+        "built": 0,
+        "total": 90,
+        "finished": false
+      },
+      "ok": true,
+      "effect": "铺设地板第 1 排 · 实际放置 5 块 · 营地 5/90 块",
+      "after": {
+        "task": "按照营地蓝图施工：搭建有完整地板、两格高围墙、玻璃窗、屋顶和可通行入口的小屋，配备工作台、熔炉、篝火、座位、照明和步道，最后返回出发营地。材料已提供，不需要采集或合成。",
+        "position": {
+          "x": 7.3,
+          "y": 37,
+          "z": 0.5
+        },
+        "health": 20,
+        "food": 20,
+        "gameMode": "survival",
+        "inventory": [
+          {
+            "name": "oak_planks",
+            "count": 64
+          },
+          {
+            "name": "oak_log",
+            "count": 16
+          },
+          {
+            "name": "stone_bricks",
+            "count": 59
+          },
+          {
+            "name": "glass",
+            "count": 8
+          },
+          {
+            "name": "crafting_table",
+            "count": 1
+          },
+          {
+            "name": "furnace",
+            "count": 1
+          },
+          {
+            "name": "campfire",
+            "count": 1
+          },
+          {
+            "name": "lantern",
+            "count": 2
+          },
+          {
+            "name": "oak_stairs",
+            "count": 2
+          }
+        ],
+        "wood": 16,
+        "nearCamp": false,
+        "camp": {
+          "x": 0.5,
+          "y": 37,
+          "z": 0.5
+        },
+        "marker": {
+          "x": 2,
+          "y": 37,
+          "z": 0
+        },
+        "campProgress": {
+          "floor": {
+            "done": 5,
+            "total": 25
+          },
+          "structure": {
+            "done": 0,
+            "total": 55
+          },
+          "facilities": {
+            "done": 0,
+            "total": 10
+          }
+        },
+        "groups": [
+          {
+            "id": "floor_0",
+            "label": "铺设地板第 1 排",
+            "done": 5,
+            "total": 5,
+            "finished": true
+          },
+          {
+            "id": "floor_1",
+            "label": "铺设地板第 2 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "floor_2",
+            "label": "铺设地板第 3 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "floor_3",
+            "label": "铺设地板第 4 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "floor_4",
+            "label": "铺设地板第 5 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "wall_6_-2",
+            "label": "搭建墙柱 (6,-2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_6_-1",
+            "label": "搭建墙柱 (6,-1)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_6_1",
+            "label": "搭建墙柱 (6,1)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_6_2",
+            "label": "搭建墙柱 (6,2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_7_-2",
+            "label": "搭建墙柱 (7,-2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_7_2",
+            "label": "搭建墙柱 (7,2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_8_-2",
+            "label": "搭建墙柱 (8,-2)与玻璃窗",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_8_2",
+            "label": "搭建墙柱 (8,2)与玻璃窗",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_9_-2",
+            "label": "搭建墙柱 (9,-2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_9_2",
+            "label": "搭建墙柱 (9,2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_10_-2",
+            "label": "搭建墙柱 (10,-2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_10_-1",
+            "label": "搭建墙柱 (10,-1)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_10_0",
+            "label": "搭建墙柱 (10,0)与玻璃窗",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_10_1",
+            "label": "搭建墙柱 (10,1)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "wall_10_2",
+            "label": "搭建墙柱 (10,2)",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "roof_0",
+            "label": "封好屋顶第 1 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "roof_1",
+            "label": "封好屋顶第 2 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "roof_2",
+            "label": "封好屋顶第 3 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "roof_3",
+            "label": "封好屋顶第 4 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "roof_4",
+            "label": "封好屋顶第 5 排",
+            "done": 0,
+            "total": 5,
+            "finished": false
+          },
+          {
+            "id": "workbench",
+            "label": "放置屋内工作台",
+            "done": 0,
+            "total": 1,
+            "finished": false
+          },
+          {
+            "id": "furnace",
+            "label": "放置屋内熔炉",
+            "done": 0,
+            "total": 1,
+            "finished": false
+          },
+          {
+            "id": "path",
+            "label": "铺设入口步道",
+            "done": 0,
+            "total": 3,
+            "finished": false
+          },
+          {
+            "id": "fire",
+            "label": "安放庭院篝火",
+            "done": 0,
+            "total": 1,
+            "finished": false
+          },
+          {
+            "id": "seats",
+            "label": "摆放篝火旁的座位",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          },
+          {
+            "id": "lights",
+            "label": "设置入口两侧照明",
+            "done": 0,
+            "total": 2,
+            "finished": false
+          }
+        ],
+        "entranceClear": true,
+        "built": 5,
+        "total": 90,
+        "finished": false
+      }
+    }
+  ]
+}

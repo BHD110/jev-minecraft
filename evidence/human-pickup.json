@@ -1,0 +1,122 @@
+{
+  "ready": true,
+  "connected": true,
+  "controlled": false,
+  "position": {
+    "x": 0.07586992241748805,
+    "y": 36,
+    "z": 6.94543532526245
+  },
+  "yaw": 3.0735248127620185,
+  "pitch": -0.49741883681835297,
+  "health": 20,
+  "food": 20,
+  "selected": 6,
+  "message": "挖开了 oak_planks",
+  "lastAction": {
+    "at": "2026-10-07T13:47:48.241Z",
+    "effect": "挖开了 oak_planks",
+    "before": {
+      "block": "oak_planks",
+      "position": {
+        "x": -1,
+        "y": 36,
+        "z": 7
+      }
+    },
+    "after": {
+      "block": "air",
+      "position": {
+        "x": -1,
+        "y": 36,
+        "z": 7
+      }
+    }
+  },
+  "target": {
+    "name": "grass_block",
+    "position": {
+      "x": -1,
+      "y": 35,
+      "z": 9
+    },
+    "face": 1
+  },
+  "digging": 0,
+  "inventory": [
+    {
+      "name": "oak_planks",
+      "count": 62
+    },
+    {
+      "name": "cobblestone",
+      "count": 64
+    },
+    {
+      "name": "dirt",
+      "count": 64
+    },
+    {
+      "name": "glass",
+      "count": 32
+    },
+    {
+      "name": "oak_log",
+      "count": 32
+    },
+    {
+      "name": "iron_pickaxe",
+      "count": 1
+    },
+    {
+      "name": "iron_axe",
+      "count": 1
+    },
+    {
+      "name": "iron_shovel",
+      "count": 1
+    },
+    {
+      "name": "stone_bricks",
+      "count": 64
+    }
+  ],
+  "hotbar": [
+    {
+      "name": "oak_planks",
+      "count": 62
+    },
+    {
+      "name": "cobblestone",
+      "count": 64
+    },
+    {
+      "name": "dirt",
+      "count": 64
+    },
+    {
+      "name": "glass",
+      "count": 32
+    },
+    {
+      "name": "oak_log",
+      "count": 32
+    },
+    {
+      "name": "iron_pickaxe",
+      "count": 1
+    },
+    {
+      "name": "iron_axe",
+      "count": 1
+    },
+    {
+      "name": "iron_shovel",
+      "count": 1
+    },
+    {
+      "name": "stone_bricks",
+      "count": 64
+    }
+  ]
+}

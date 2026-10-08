@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN" translate="no">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google" content="notranslate"><title>自己玩 Minecraft · 和 Jev 在同一个世界</title><link rel="stylesheet" href="/play.css"></head>
+<body>
+  <header><a href="/" class="brand">◇ MINECRAFT <span>× JEV</span></a><span class="tag">你在玩 · 独立角色与背包</span><div class="tools"><a href="/" target="_blank">看 Jev 玩 ↗</a><button id="help">操作说明</button><button id="home">回营地</button><button id="fullscreen">全屏 ⛶</button></div></header>
+  <main id="game">
+    <iframe id="world" src="/play/view/?camera=first" title="你操控的 Minecraft 角色视角"></iframe>
+    <div id="input-surface" tabindex="0" aria-label="游戏操作区域"></div>
+    <div class="top-hud"><span id="connection">正在连接你的角色…</span><span id="position">位置 —</span></div>
+    <div class="crosshair">＋</div>
+    <div class="aim"><span id="target">移动鼠标瞄准方块</span><progress id="dig-progress" value="0" max="1" hidden></progress></div>
+    <div class="toast" id="message">加载森林和真实区块，首次打开需要几秒…</div>
+    <div id="welcome"><div class="welcome-card"><span class="eyebrow">和 Jev 在同一个世界</span><h1>这次，轮到你来玩。</h1><p>走进森林、砍树、挖土，<br>也可以用开局材料搭自己的房子。</p><button id="enter" disabled>正在进入世界…</button><div class="key-guide"><span><kbd>W A S D</kbd> 走动</span><span><kbd>空格</kbd> 跳跃</span><span><kbd>鼠标</kbd> 看方向</span><span><kbd>左键</kbd> 按住挖掘</span><span><kbd>右键</kbd> 放置</span><span><kbd>1—9</kbd> 换物品</span></div><small>按 Esc 暂停操作 · 页面失去焦点会自动停下</small></div></div>
+    <div class="bottom-hud"><div class="vitals"><span id="hearts">♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</span><small id="selected-name">生存模式 · 开局建筑材料已准备</small><span class="hint">Esc 退出鼠标控制 · E 查看背包</span></div><div class="hotbar" id="hotbar"></div></div>
+  </main>
+  <footer><span id="mode-note">点击画面进入操作；方向键也能转动视角。</span><div><button id="dig">挖掉瞄准方块</button><button id="place">放置方块</button><button id="bag">背包 E</button></div></footer>
+  <dialog id="help-dialog"><button class="close" aria-label="关闭操作说明">✕</button><h2>怎么玩</h2><p>点击“进入世界”后，鼠标控制方向，按 Esc 退出。浏览器不支持锁定鼠标时，按住画面拖动或用方向键转动视角。</p><table><tbody><tr><td>W / A / S / D</td><td>前进 / 左移 / 后退 / 右移</td></tr><tr><td>空格</td><td>跳跃</td></tr><tr><td>Ctrl / Shift</td><td>疾跑 / 潜行</td></tr><tr><td>按住鼠标左键</td><td>挖准星对着的方块；工具会影响速度</td></tr><tr><td>鼠标右键</td><td>在瞄准的表面放置手里的方块</td></tr><tr><td>1—9 / 滚轮</td><td>选择快捷栏物品</td></tr><tr><td>E</td><td>查看自己的背包</td></tr><tr><td>方向键</td><td>转动视角（鼠标操作的替代方式）</td></tr></tbody></table><p class="small">这是本机开源兼容世界中的可操作角色。当前支持移动、挖掘、拾取和建造，未加入完整合成系统。你和 Jev 会改动同一个世界，但背包各自独立。营地金块是 Jev 的建造位置，建议在旁边搭建。</p></dialog>
+  <dialog id="bag-dialog"><button class="close" aria-label="关闭背包">✕</button><h2>你的背包</h2><p>开局有木板、圆石、泥土、玻璃、原木、石砖和三种工具。走近掉落物会自动拾取。</p><div id="bag-items"></div></dialog>
+  <script src="/play/control/socket.io/socket.io.js"></script><script type="module" src="/play.js"></script>
+</body></html>
